@@ -1,4 +1,4 @@
-public class TwentyTwentyAthletes extends Athletes {
+public class TwentyTwentyAthlete extends Athlete {
     //Fields
     int rank;
     String name;
@@ -8,7 +8,7 @@ public class TwentyTwentyAthletes extends Athletes {
     int salary;
     int endorsements;
 
-    public TwentyTwentyAthletes(int rank, String name, float sport, float nation, int earnings, int salary, int endorsements) {
+    public TwentyTwentyAthlete(int rank, String name, float sport, float nation, int earnings, int salary, int endorsements) {
         this.rank = rank;
         this.name = name;
         this.sport = sport;
