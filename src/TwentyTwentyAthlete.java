@@ -33,6 +33,7 @@ public class TwentyTwentyAthlete extends Athlete {
         description += " in Millions. He makes " + this.getSalary();
         description += " million for his salary and makes " + this.getEndorsements();
         description += " million in endorsements.";
+        return description;
     }
 
 
