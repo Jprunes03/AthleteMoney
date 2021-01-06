@@ -5,4 +5,10 @@ public class AllTimeAthlete extends Athlete {
     public AllTimeAthlete(int rank, String name, String sport, String nation, int earnings) {
         super(rank, name, sport, nation, earnings);
     }
+    public String toString() {
+
+
+
+    }
 }
+

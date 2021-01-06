@@ -24,4 +24,16 @@ public class TwentyTwentyAthlete extends Athlete {
     public void setEndorsements(int endorsements) {
         Endorsements = endorsements;
     }
+    public String toString() {
+        String description = "\"" + this.getName();
+        description += "\" is ranked #" + this.getRank();
+        description += ". He plays " + this.getSport();
+        description += " in " + this.getNation();
+        description += " and has earned " + this.getEarnings();
+        description += " in Millions. He makes " + this.getSalary();
+        description += " million for his salary and makes " + this.getEndorsements();
+        description += " million in endorsements.";
+    }
+
+
 }
