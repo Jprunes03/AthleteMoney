@@ -1,5 +1,10 @@
+import java.util.ArrayList;
+
+import java.util.ArrayList;
+
 public class Athlete {
     //Fields
+    private static ArrayList<Athlete> athletes;
     private int Rank;
     private String Name;
     private String Sport;
@@ -12,6 +17,11 @@ public class Athlete {
         this.Sport = sport;
         this.Nation = nation;
         this.Earnings = earnings;
+
+       if(athletes == null){
+          athletes = new ArrayList<Athlete>();
+       }
+       athletes.add(this);
     }
 
     public int getRank() {
@@ -53,4 +63,12 @@ public class Athlete {
     public void setEarnings(int earnings) {
         Earnings = earnings;
     }
+
+    static void describeAll() {
+        athletes.forEach((eachAthlete)-> {
+            System.out.println(eachAthlete);
+        } );
+
+    }
+
 }
